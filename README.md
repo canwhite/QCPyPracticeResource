@@ -1,0 +1,2 @@
+# QCPyPracticeResource
+pytthon3的一些练习还有资源
