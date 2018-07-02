@@ -1,0 +1,82 @@
+
+print("========字典的增删改查类似于列表，不过是针对key来操作的========")
+print("========字典使用大括号包围元素=============================")
+dic = {"name":"qiao","age":16}
+
+print("========字典的内置函数====================================")
+
+
+print("len() str() type()")
+
+
+
+print("========字典的方法=======================================")
+
+Python字典包含了以下内置方法：
+
+1	radiansdict.clear()
+删除字典内所有元素
+
+
+2	radiansdict.copy()
+返回一个字典的浅复制
+
+
+3	radiansdict.keys()
+以列表返回一个字典所有的键
+
+
+
+4	radiansdict.values()
+以列表返回字典中的所有值
+
+
+5	radiansdict.setdefault(key, default=None)
+和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default
+
+
+6	radiansdict.get(key, default=None)
+返回指定键的值，如果值不在字典中返回default值
+
+
+
+
+7	radiansdict.fromkeys()
+创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值
+
+seq = ('name', 'age', 'sex')
+dict = dict.fromkeys(seq)
+print ("新的字典为 : %s" %  str(dict))
+dict = dict.fromkeys(seq, 10)
+print ("新的字典为 : %s" %  str(dict))
+
+输出结果：
+新的字典为 : {'age': None, 'name': None, 'sex': None}
+新的字典为 : {'age': 10, 'name': 10, 'sex': 10}
+
+
+
+
+
+8.key in dict
+如果键在字典dict里返回true，否则返回false
+
+
+
+9	radiansdict.items()
+以列表返回可遍历的(键, 值) 元组数组
+
+
+
+10	radiansdict.update(dict2)
+把字典dict2的键/值对更新到dict里
+
+
+
+
+11	pop(key[,default])
+删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。
+
+
+12	popitem()
+随机返回并删除字典中的一对键和值(一般删除末尾对)
